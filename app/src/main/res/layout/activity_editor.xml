@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_margin"
+              tools:context=".EditorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/product_name" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp">
+
+
+                    <EditText
+                        android:id="@+id/image_name"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_item_name"
+                        android:inputType="text" />
+
+
+                    <EditText
+                        android:id="@+id/product_category"
+                        style="@style/EditorFieldStyle"
+                        android:hint="Company Name"
+                        android:inputType="textCapWords" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="5dp">
+
+                        <EditText
+                            android:id="@+id/item_price"
+                            style="@style/EditorFieldStyle"
+                            android:hint="@string/price_hint"
+                            android:inputType="numberDecimal" />
+
+                        <TextView
+                            android:id="@+id/currency"
+                            style="@style/EditorUnitsStyle"
+                            android:text="$"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/product_photo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <!-- Photo -->
+                    <ImageView
+                        android:id="@+id/image_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:maxHeight="120dp"
+                        android:paddingLeft="5dp"
+                        android:scaleType="centerInside"
+                        tools:background="@drawable/empty_cart"
+                        tools:minHeight="115dp" />
+
+                    <TextView
+                        android:id="@+id/image_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        tools:text="Tap to add a photo" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Warranty Status" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:paddingRight="10dp"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/supplier" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+
+                    <EditText
+                        android:id="@+id/supplier_name"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_supplier"
+                        android:inputType="textCapWords" />
+
+
+                    <EditText
+                        android:id="@+id/supplier_email"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/container_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/item_measurement" />
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingLeft="5dp">
+
+
+                        <EditText
+                            android:id="@+id/product_quantity"
+                            style="@style/EditorFieldStyle"
+                            android:hint="@string/hint_quantity"
+                            android:inputType="number" />
+
+
+                        <TextView
+                            android:id="@+id/units"
+                            style="@style/EditorUnitsStyle"
+                            android:text="pieces" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/rejectButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reject Item"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/addButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Add Item"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

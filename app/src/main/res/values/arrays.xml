@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_warranty_options">
+        <item>Warranty Unknown</item>
+        <item>In Warranty</item>
+        <item>Out of Warranty</item>
+    </string-array>
+</resources>

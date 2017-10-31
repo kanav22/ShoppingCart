@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inventory App</string>
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="delete_all_entries">Delete All Items</string>
+    <string name="editor_activity_title_new_item">Add an item</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="product_name">Product</string>
+    <string name="item_measurement">Quantity</string>
+    <string name="hint_item_name">Item name</string>
+    <string name="hint_item_model">Model</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="product_quantity">pcs</string>
+    <string name="insert_product_successful">Item saved</string>
+    <string name="insert_product_failed">Error with saving item</string>
+    <string name="empty_view_text">Get started by adding an item</string>
+    <string name="activity_title_edit">Edit a Product</string>
+    <string name="update_product_successful">Item updated</string>
+    <string name="update_product_failed">Error with updating item</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_product_successful">Item deleted</string>
+    <string name="delete_product_failed">Error with deleting item</string>
+    <string name="delete_dialog_msg">Delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="unknown_model">Unknown model</string>
+    <string name="product_photo">Picture</string>
+    <string name="supplier">Supplier</string>
+    <string name="hint_supplier">Supplier Name</string>
+    <string name="hint_email">supplier@gmail.com</string>
+    <string name="currency_symbol">$</string>
+    <string name="price_hint">400</string>
+    <string name="add_photo_hint">Tap to add a photo</string>
+    <string name="edit_photo_hint">Tap to change a photo</string>
+    <string name="intent_type">image/*</string>
+    <string name="select_image">Select image</string>
+    <string name="action_order_more_items">Order more Items</string>
+    <string name="validation_product_name">Product name is required</string>
+    <string name="validation_product_quantity">Quantity is required</string>
+    <string name="validation_product_price">Price is required</string>
+    <string name="validation_msg_product_image">Photo of product is required</string>
+    <string name="error_stock_update">Issue with upload value of quantity</string>
+    <string name="confirm_message">Item has been sold</string>
+    <string name="no_Stock">No available product in stock</string>
+    <string name="in_stock">In stock:</string>
+    <string name="unit">pieces</string>
+    <string name="currency_sign">$</string>
+    <string name="sample_model">IPHONE 7</string>
+    <string name="name_of_product">Apple</string>
+    <string name="sample_price">700</string>
+    <string name="sample_quantity">11</string>
+    <string name="sample_product_name">APPLE</string>
+    <string name="sample_product_model">IPHONE 7 </string>
+    <string name="sample_supplier_email">stevejobs@gmail.com</string>
+    <string name="sample_supplier_name">Tim Cook</string>
+    <string name="toast_out_of_stock">Product is out of stock!</string>
+    <string name="steve_email">steve.jobs@gmail.com</string>
+    <string name="apple_private">Apple private limited</string>
+    <string name="failed_row">Failed to insert row for</string>
+
+</resources>
